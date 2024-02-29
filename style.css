@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap");
+
+*,
+::after,
+::before {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+:root {
+  --background-color: #938455;
+  --light-green: #d0e392;
+  --rose: #f6c8c4;
+  --button-color: #caba8c;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 95%;
+  max-width: 1200px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.game__header {
+  font-size: 2rem;
+  text-align: center;
+}
+
+canvas {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  min-width: 300px;
+  width: 90%;
+  border: 2px solid #dbbc5f;
+}
+
+.score {
+  font-weight: 800;
+  color: var(--rose);
+  margin-bottom: 2.4rem;
+}
+
+.message {
+  font-weight: 800;
+
+  opacity: 0;
+}
+
+.score span {
+  margin-left: 0.5rem;
+}
+
+.score span,
+.message {
+  color: var(--light-green);
+}
+
+.game__footer {
+  display: flex;
+  gap: 2rem;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  background-color: var(--button-color);
+  border: none;
+  transition: background-color 0.2s ease, color 0.5s ease;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+button:hover {
+  background-color: #dbbc5f;
+}
+
+.inactive {
+  pointer-events: none;
+  background-color: rgb(202, 186, 140, 0.3);
+  color: rgba(110, 91, 32, 0.3);
+}
