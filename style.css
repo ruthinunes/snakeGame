@@ -31,8 +31,9 @@ body {
 }
 
 .main {
-  width: 95%;
+  width: 80%;
   max-width: 1200px;
+  padding: 2.4rem 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
